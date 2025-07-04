@@ -1,0 +1,207 @@
+
+.profile-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.profile-sidebar {
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.profile-avatar {
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 3rem;
+  color: #bdc3c7;
+}
+
+.avatar-form {
+  margin-top: 15px;
+}
+
+.profile-menu {
+  padding: 15px 0;
+}
+
+.profile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-menu li {
+  margin-bottom: 5px;
+}
+
+.profile-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.profile-menu a:hover {
+  background-color: #f8f9fa;
+  color: #3498db;
+  border-left-color: #3498db;
+}
+
+.profile-menu li.active a {
+  background-color: #f8f9fa;
+  color: #3498db;
+  border-left-color: #3498db;
+  font-weight: 500;
+}
+
+.profile-content {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.profile-tab {
+  padding: 30px;
+  display: none;
+}
+
+.profile-tab.active {
+  display: block;
+}
+
+.profile-tab h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.form-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.orders-table-container {
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.orders-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-pending {
+  background-color: rgba(243, 156, 18, 0.1);
+  color: #f39c12;
+}
+
+.status-processing {
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+}
+
+.status-shipped {
+  background-color: rgba(155, 89, 182, 0.1);
+  color: #9b59b6;
+}
+
+.status-delivered {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+}
+
+.status-cancelled {
+  background-color: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.empty-state i {
+  font-size: 3rem;
+  color: #bdc3c7;
+  margin-bottom: 20px;
+}
+
+.empty-state p {
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .profile-sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-tab {
+    padding: 20px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+}

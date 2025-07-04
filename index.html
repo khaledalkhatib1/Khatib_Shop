@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroShop - Your One-Stop Electronics Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +961 78 948 628</span>
+                    <span><i class="fas fa-envelope"></i> sonysat@hotmail.com</span>
+                </div>
+                <div class="user-actions">
+                    <a href="login.php"><i class="fas fa-user"></i> Login</a>
+                    <a href="register.php"><i class="fas fa-user-plus"></i> Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.php">
+                        <h1>Khatib Electronics</h1>
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <form action="search.php" method="GET">
+                        <input type="text" name="query" placeholder="Search products...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="cart">
+                    <a href="cart.php">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="index.php" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="products.php">Products <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.php?category=televisions">Televisions</a></li>
+                            <li><a href="products.php?category=refrigerators">Refrigerators</a></li>
+                            <li><a href="products.php?category=washing-machines">Washing Machines</a></li>
+                            <li><a href="products.php?category=ovens">Ovens</a></li>
+                            <li><a href="products.php?category=microwaves">Microwaves</a></li>
+                            <li><a href="products.php?category=air-conditioners">Air Conditioners</a></li>
+                            <li><a href="products.php?category=solar-systems">Solar Systems</a></li>
+                            <li><a href="products.php?category=batteries">Batteries</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="new-arrivals.php">New Arrivals</a></li>
+                    <li><a href="deals.php">Special Deals</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Next-Gen Electronics for Modern Living</h1>
+            <p>Discover cutting-edge appliances, TVs, and energy solutions that transform your home and lifestyle.</p>
+            <div class="hero-buttons">
+                <a href="products.php" class="btn btn-primary">Shop Now</a>
+                <a href="products.php?category=solar-systems" class="btn btn-secondary">Explore Solar Solutions</a>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="featured-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Categories</h2>
+                <a href="products.php" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="images/categories/televisions.jpg" alt="Televisions">
+                    <h3>Televisions</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/categories/refrigerators.jpg" alt="Refrigerators">
+                    <h3>Refrigerators</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/categories/washing-machines.jpg" alt="Washing Machines">
+                    <h3>Washing Machines</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/categories/ovens.jpg" alt="Ovens">
+                    <h3>Ovens</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="new-arrivals">
+        <div class="container">
+            <div class="section-header">
+                <h2>New Arrivals</h2>
+                <a href="new-arrivals.php" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="images/products/smart-tv-65.jpg" alt="65-inch Smart TV">
+                    </div>
+                    <div class="product-info">
+                        <h3>65" Ultra HD Smart TV</h3>
+                        <div class="product-price">
+                            <span class="current-price">$899.99</span>
+                            <span class="original-price">$1,199.99</span>
+                            <span class="discount">25% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="1"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="quick-view" data-id="1"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="images/products/smart-oven.jpg" alt="Smart Oven">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Convection Oven</h3>
+                        <div class="product-price">
+                            <span class="current-price">$349.99</span>
+                            <span class="original-price">$429.99</span>
+                            <span class="discount">18% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="2"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="quick-view" data-id="2"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="images/products/air-conditioner.jpg" alt="Smart Air Conditioner">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Inverter Air Conditioner</h3>
+                        <div class="product-price">
+                            <span class="current-price">$599.99</span>
+                            <span class="original-price">$699.99</span>
+                            <span class="discount">14% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="3"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <div class="product-image">
+                        <img src="images/products/microwave.jpg" alt="Digital Microwave">
+                    </div>
+                    <div class="product-info">
+                        <h3>Digital Inverter Microwave</h3>
+                        <div class="product-price">
+                            <span class="current-price">$149.99</span>
+                            <span class="original-price">$199.99</span>
+                            <span class="discount">25% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="4"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="quick-view" data-id="4"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <a href="products.php" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-badge featured">Featured</div>
+                    <div class="product-image">
+                        <img src="images/products/refrigerator.jpg" alt="Smart Refrigerator">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart French Door Refrigerator</h3>
+                        <div class="product-price">
+                            <span class="current-price">$1,299.99</span>
+                            <span class="original-price">$1,599.99</span>
+                            <span class="discount">19% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="5"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="quick-view" data-id="5"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge featured">Featured</div>
+                    <div class="product-image">
+                        <img src="images/products/washing-machine.jpg" alt="Washing Machine">
+                    </div>
+                    <div class="product-info">
+                        <h3>Front Load Washing Machine</h3>
+                        <div class="product-price">
+                            <span class="current-price">$699.99</span>
+                            <span class="original-price">$849.99</span>
+                            <span class="discount">18% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="6"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="quick-view" data-id="6"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge featured">Featured</div>
+                    <div class="product-image">
+                        <img src="images/products/solar-panel.jpg" alt="Solar Panel Kit">
+                    </div>
+                    <div class="product-info">
+                        <h3>5kW Solar Panel Kit</h3>
+                        <div class="product-price">
+                            <span class="current-price">$3,499.99</span>
+                            <span class="original-price">$3,999.99</span>
+                            <span class="discount">12% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="7"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="quick-view" data-id="7"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-badge featured">Featured</div>
+                    <div class="product-image">
+                        <img src="images/products/battery.jpg" alt="Lithium Battery">
+                    </div>
+                    <div class="product-info">
+                        <h3>5kWh Lithium Battery</h3>
+                        <div class="product-price">
+                            <span class="current-price">$1,299.99</span>
+                            <span class="original-price">$1,499.99</span>
+                            <span class="discount">13% OFF</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart" data-id="8"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                            <button class="quick-view" data-id="8"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Free Shipping</h3>
+                    <p>On all orders over $100</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Get help when you need it</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>Easy Returns</h3>
+                    <p>30-day money back guarantee</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Payment</h3>
+                    <p>Your data is protected</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates on new products and special promotions</p>
+                <form action="subscribe.php" method="POST" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>ElectroShop</h3>
+                    <p>Your one-stop shop for all electronics needs. Quality products at affordable prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="products.php?category=televisions">Televisions</a></li>
+                        <li><a href="products.php?category=refrigerators">Refrigerators</a></li>
+                        <li><a href="products.php?category=washing-machines">Washing Machines</a></li>
+                        <li><a href="products.php?category=ovens">Ovens</a></li>
+                        <li><a href="products.php?category=microwaves">Microwaves</a></li>
+                        <li><a href="products.php?category=air-conditioners">Air Conditioners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="shipping.php">Shipping Policy</a></li>
+                        <li><a href="returns.php">Returns & Refunds</a></li>
+                        <li><a href="faq.php">FAQ</a></li>
+                        <li><a href="privacy.php">Privacy Policy</a></li>
+                        <li><a href="terms.php">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> Khatib Electronics, Bekaa, Majdal Anjar, Masnaa Road</p>
+                        <p><i class="fas fa-phone"></i> +961 78 948 628</p>
+                        <p><i class="fas fa-envelope"></i> Sonysat@hotmail.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ElectroShop. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="product-quick-view">
+                <div class="product-quick-view-image">
+                    <img src="/placeholder.svg" alt="Product Image" id="modalProductImage">
+                </div>
+                <div class="product-quick-view-info">
+                    <h2 id="modalProductName"></h2>
+                    <div class="product-price">
+                        <span class="current-price" id="modalProductPrice"></span>
+                        <span class="original-price" id="modalProductOriginalPrice"></span>
+                        <span class="discount" id="modalProductDiscount"></span>
+                    </div>
+                    <div class="product-description" id="modalProductDescription"></div>
+                    <div class="product-quantity">
+                        <label for="quantity">Quantity:</label>
+                        <div class="quantity-selector">
+                            <button class="quantity-decrease">-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button class="quantity-increase">+</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary add-to-cart-modal" id="modalAddToCart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    <a href="#" class="btn btn-secondary" id="modalViewDetails">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/header-scroll.js"></script>
+</body>
+</html>
